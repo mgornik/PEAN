@@ -1,0 +1,15 @@
+2.2.4 Podrška za studentske zadatke u kojima figuriše i neki novi fajl koji nije bio deo postavke zadatka (npr. nova klasa koju je uveo student)
+2.2.3 Broj gresaka i upozorenja se cita iz fajla sa izvestajem kompajliranja umesto da se koristi exit code code::blocks-a
+2.2.2 Popravka git done komande da radi sa novim formatom XML fajla
+2.2.1 Dalja podela izvornog koda na više modula
+2.2.0 Omogućeno je pokretanje više testova u paraleli. Postoji ograničen broj radnih niti koje se bave pokretanjem testova i interpretacijom njihovih rezultata. Konzolni izlaz testova se sada trajno čuva u tekstualnim fajlovima u novom podrepozitorijumu - reports. Finalni izveštaj sadrži brze linkove ka konzolnom ispisu pojedinačnih testova i prikaz za svako pojedinačno pokretanje - da li je bilo uspešno ili ne.
+2.1.6 Inicijalizacija ce ucitati nazive testova i ubaciti ih u kriterijumski fajl. Kriterijumski fajl se generise putem JSON enkodera umesto kao obican tesktualni fajl.
+2.1.5 Testovi se pokreću u redosledu u kojem su navedeni u kriterijumskom fajlu.
+2.1.4 Rašćišćena je situacija sa TestingResults i TestResults tuple klasama. TestResults je zadržana jer je projektovana za čuvanje rezultata u uslovima u kojima se test može izvršavati više puta. TestingResults je preimenovana u SingleRunResult i njen fokus je čuvanje rezultata jednog izvršenja jednog testa.
+2.1.3 Mogućnost da se testovi u zadacima koji su probabilistički izvršavaju više puta.
+2.1.2 Dodat je ignore pattern koji sprečava da se nepotrebni fajlovi prikazuju u izvršenju diff komande.
+2.1.1 Dodat je prikaz pokretanja testova u izvestaju sa polaganja. Dodata je mogucnost da se sakriju detalji na izvestaju.
+2.1.0 Testovi se pokreću u odvojenim izvršnim sesijama, kako pad (seg fault / timeout) jednog testa ne bi narušio izvršenje ostalih testova.
+2.0.2 Popravljen je bag sa parcijelnim upisom XML fajla kada komentar zadatka koristi UTF8 karaktere. Sada su UTF8 karakteri dozvoljeni. Takođe je puna UTF8 latinica prisutna u ostatku XML fajla i XSLT fajlu, kao i u log fajlu alata.
+2.0.1 Novi format final_report.xml fajla (redukovan je broj atributa u korist podtagova). XML se sada pretty-print-uje kako bi bio lakše čitljiv.
+2.0.0 Nova modularna struktura alata, koja dozvoljava da se istovremeno koristi više back-end-ova. Ovo omogućava da se alat koristi sa različitim programskim jezicima, kompajlerima i razvojnim okruženjima.

@@ -1,0 +1,37 @@
+{
+	"Group1Path": "GrupaA",
+	"Group2Path": "GrupaB",
+	"TempPath": "temporary",
+	"AssignmentsArchivePattern": "sve*.tar",
+	"SingleAssignmentArchiveExt": ".tgz",
+	"SingleAssignmentArchivePattern": "provera*.tgz",
+	"StudentsListPattern": "spisak_stud_koji_trenutno_rade_proveru*.txt",
+
+	"Timeout": "60",
+
+	"RatingConfigFilename": "criteria.json",
+	"FinalReportFilename": "final_report.xml",
+	"FinalReportXSLTFilename": "final_report.xsl",
+	"ExportedReportFilename": "result.csv",
+	"ExportedArchiveFilename": "result.zip",
+	"CommentFilename": "comment.txt",
+	"StationFilename": "current-station.txt",
+
+	"ArchivePath": "archive",
+	"AssignmentsPath": "assignments",
+	"ReportsPath": "reports",
+	"ConsoleReportFilename": "{0}-{1}.txt",
+	"AlteredAssignmentsPath": "altered-assignments",
+	"CurrentAssignmentPath": "current-assignment",
+	"CurrentAltAssignmentPath": "alt-assignment",
+	"BackupPath": "backup",
+	"InitialProjectPath": "initial-project",
+	"AutotestPath": "autotest",
+	"TempPath": "temp",
+
+	"ExtractAssignmentsCommand": "tar xf {0} -C {1}",
+	"ExtractSingleAssignmentCommand": "tar zxf {0} -C {1}",
+	"CompressReportCommand": "zip {0} {1}",
+	"VisualDiffCommand": "fldiff {0} {1}",
+	"TextEditCommand": "gedit {0}"
+}

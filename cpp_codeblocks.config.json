@@ -1,0 +1,19 @@
+{
+	"ParallelTestingThreadsCount": 100,
+	"ProjectPattern": "*.cbp",
+	"AssignmentFilesPattern": ["*.h","*.cpp"],
+	"IgnoreFilesPattern": ["*.depend", "*.layout", "*.cbp", "*.pdf", "*.odt"],
+
+	"EnforceMyCompiler": false,
+	"MyCompiler": "gcc0x",
+
+	"LaunchCodeBlocksOnAssignmentOpen": false,
+
+	"BuildReportFilename": "build_report.txt",
+	"GtestTestingReportFilename": "testing_report_{0}-{1}.xml",
+	"GtestTestingReportStatusFilename": "testing_status_{0}-{1}.txt",
+
+	"OpenProjectCommand": "codeblocks --multiple-instance {0} > /dev/null 2>/dev/null",
+	"BuildCommand": "codeblocks --multiple-instance --rebuild --target=Debug {0} > {1} 2>/dev/null",
+	"ExecuteProjectCommand": "timeout {0}s {1} --gtest_output=xml:{2} --gtest_filter={3} >../../{4} 2>&1"
+}
